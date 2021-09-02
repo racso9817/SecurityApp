@@ -1,2 +1,2 @@
 # SecurityApp
-Security para Box
+Interfaz para la aplicación web de Security
