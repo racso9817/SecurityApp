@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, ElementRef, ViewChild } from "@angular/core";
 import { NgbProgressbarConfig } from "@ng-bootstrap/ng-bootstrap";
 import { single } from './data';
 
@@ -8,9 +8,11 @@ import { single } from './data';
 })
 export class Dashboard1Component {
 
+  @ViewChild('chartArea', { static: true }) chartArea: ElementRef;
+
   single: any[];
 
-  view: any[] = [1200, 400];
+  view: any[] = [innerWidth, 400];//[1000, 400];
 
   // options
   showXAxis = true;
@@ -34,6 +36,9 @@ export class Dashboard1Component {
     console.log(event);
   }
 
-
+  setViewSize() {
+    this.view = this.single.length > 15 ?
+    [Math.max(Math.floor(this.single.length / 5 ) * 200, this.chartArea.nativeElement.offsetWidth), 500] : null;
+  }
   
 }
