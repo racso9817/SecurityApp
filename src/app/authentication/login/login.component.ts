@@ -55,7 +55,7 @@ export class LoginComponent implements OnInit{
       this.invalidUser = true;
       // this.spinner.hide();
     }
-    window.location.reload();
+    //window.location.reload();
   }
 
 }
