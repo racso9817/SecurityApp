@@ -14,6 +14,7 @@ import { ChartistModule } from 'ng-chartist';
 
 
 import { RecentcommentComponent } from './dashboard-components/recent-comment/recent-comment.component';
+import { NotifierComponent } from './dashboard-components/notifier/notifier/notifier.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { RecentcommentComponent } from './dashboard-components/recent-comment/re
     Dashboard1Component,
     Dashboard2Component,
     RecentcommentComponent,
+    NotifierComponent,
   ]
 })
 export class DashboardModule { }

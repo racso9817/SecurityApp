@@ -5,20 +5,21 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyD__-U0jKdeOc04HX5ewkBCoX8u2ElI-QM",
-    authDomain: "security-3d2c1.firebaseapp.com",
-    projectId: "security-3d2c1",
-    storageBucket: "security-3d2c1.appspot.com",
-    messagingSenderId: "487568932036",
-    appId: "1:487568932036:web:469f3914bde08e46895d91",
-    measurementId: "G-S11TE6NBSC"
+    apiKey: "AIzaSyCCTqeZ9r7eARkqXMcBHm9dW7nfrG4y7e8",
+    authDomain: "pruebaesp-f3402.firebaseapp.com",
+    databaseURL: "https://pruebaesp-f3402-default-rtdb.firebaseio.com",
+    projectId: "pruebaesp-f3402",
+    storageBucket: "pruebaesp-f3402.appspot.com",
+    messagingSenderId: "706748680758",
+    appId: "1:706748680758:web:e9f49b693b672d95d0a697",
+    measurementId: "G-W5WP5VQ1B1"
   },
 
   coleccionUsuarios: {
-    usuarios: 'usuarioSecutiry'
+    usuarios: 'usuarioSecutiry',
+    carro: 'carroSecurity',
+    location: 'locationSecurity',
   }
-
-
 };
 
 /*
