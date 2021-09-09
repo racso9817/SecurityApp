@@ -15,6 +15,9 @@ import { ChartistModule } from 'ng-chartist';
 
 import { RecentcommentComponent } from './dashboard-components/recent-comment/recent-comment.component';
 import { NotifierComponent } from './dashboard-components/notifier/notifier/notifier.component';
+import { CardsComponent } from './dashboard-components/cards/cards.component';
+import { Dashboard3Component } from './dashboard3/dashboard3.component';
+import { TableCarsComponent } from './dashboard-components/table-cars/table-cars.component';
 
 
 @NgModule({
@@ -33,6 +36,9 @@ import { NotifierComponent } from './dashboard-components/notifier/notifier/noti
     Dashboard2Component,
     RecentcommentComponent,
     NotifierComponent,
+    CardsComponent,
+    Dashboard3Component,
+    TableCarsComponent,
   ]
 })
 export class DashboardModule { }

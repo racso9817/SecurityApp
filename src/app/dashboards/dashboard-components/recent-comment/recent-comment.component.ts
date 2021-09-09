@@ -3,11 +3,11 @@ import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 import { FireDataService } from 'src/app/appServices/dashboards/services/fire-data.service';
 import { Carro } from 'src/app/interfaces/carro';
 
-
 @Component({
   selector: 'app-recent-comment',
   templateUrl: './recent-comment.component.html'
 })
+
 export class RecentcommentComponent {
 
   recentcomments: Object[] = [];

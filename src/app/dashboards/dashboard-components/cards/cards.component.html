@@ -1,0 +1,33 @@
+<div class="row">
+    <!-- Column -->
+    <div class="col-lg-12">
+        <div class="carros-cards" *ngFor="let v of vehiculos">
+            <div class="card">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card-body">
+                            <img class="rounded-circle img-responsive" src="{{v.image}}" width="200vw" height="200vw">
+                        </div>                        
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body">
+                            <h6><b>Marca:</b> {{v.marca}}</h6>
+                            <h6><b>Placa:</b> {{v.placa}}</h6>
+                            <h6><b>Conductor:</b> {{v.conductor}}</h6>
+                            <h6><b>Última fecha:</b> {{v.fecha}}</h6>
+                            <h6><b>Última hora encendido:</b> {{v.horaEncendido}}</h6>
+                            <h6><b>Última hora apagado:</b> {{v.horaApagado}}</h6>
+                            <h6><b>Ubicación:</b> 
+                                <a href="{{v.ubicacion}}">
+                                    Lugar
+                                </a>
+                            </h6>
+                            <a href="#" class="btn btn-primary">Ver Resumen</a>                  
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <!-- Column -->
+</div>

@@ -17,6 +17,61 @@ export const Approutes: Routes = [
 				canActivate: [AuthGuard],
 				loadChildren: () => import('./dashboards/dashboard.module').then(m => m.DashboardModule)
 			},
+			{
+				path: 'rrhh',
+				canActivate: [AuthGuard],
+				loadChildren: () => import('./dashboards/dashboard.module').then(m => m.DashboardModule)
+			},
+			{
+				path: 'mobile',
+				canActivate: [AuthGuard],
+				loadChildren: () => import('./dashboards/dashboard.module').then(m => m.DashboardModule)
+			},
+			{
+				path: 'balistica',
+				canActivate: [AuthGuard],
+				loadChildren: () => import('./dashboards/dashboard.module').then(m => m.DashboardModule)
+			},
+			{
+				path: 'vigilancia',
+				canActivate: [AuthGuard],
+				loadChildren: () => import('./dashboards/dashboard.module').then(m => m.DashboardModule)
+			},
+			{
+				path: 'equipos',
+				canActivate: [AuthGuard],
+				loadChildren: () => import('./dashboards/dashboard.module').then(m => m.DashboardModule)
+			},
+			{
+				path: 'vehiculos',
+				canActivate: [AuthGuard],
+				loadChildren: () => import('./dashboards/dashboard.module').then(m => m.DashboardModule)
+			},
+			{
+				path: 'vestimenta',
+				canActivate: [AuthGuard],
+				loadChildren: () => import('./dashboards/dashboard.module').then(m => m.DashboardModule)
+			},
+			{
+				path: 'camaras',
+				canActivate: [AuthGuard],
+				loadChildren: () => import('./dashboards/dashboard.module').then(m => m.DashboardModule)
+			},
+			{
+				path: 'drones',
+				canActivate: [AuthGuard],
+				loadChildren: () => import('./dashboards/dashboard.module').then(m => m.DashboardModule)
+			},
+			{
+				path: 'inventario',
+				canActivate: [AuthGuard],
+				loadChildren: () => import('./dashboards/dashboard.module').then(m => m.DashboardModule)
+			},
+			{
+				path: 'servicios',
+				canActivate: [AuthGuard],
+				loadChildren: () => import('./dashboards/dashboard.module').then(m => m.DashboardModule)
+			},
 		]
 	},
 	{

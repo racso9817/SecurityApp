@@ -1,0 +1,39 @@
+<div class="col-12">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Resumen General de Vehículos</h4>
+        </div>
+        <div class="table-responsive">
+            <table class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Marca</th>
+                        <th scope="col">Placa</th>
+                        <th scope="col">Conductor</th>
+                        <th scope="col">Última fecha</th>
+                        <th scope="col">Última fecha encendido</th>
+                        <th scope="col">Última fecha apagado</th>
+                        <th scope="col">Ubicación</th>                        
+                    </tr>
+                </thead>
+                <tbody *ngFor="let v of vehiculos; let i = index">
+                    <tr>
+                        <th scope="row">{{i+1}}</th>
+                        <td>{{v.marca}}</td>
+                        <td>{{v.placa}}</td>
+                        <td>{{v.conductor}}</td>
+                        <td>{{v.fecha}}</td>
+                        <td>{{v.horaEncendido}}</td>
+                        <td>{{v.horaApagado}}</td>
+                        <td>
+                            <a href="{{v.ubicacion}}">
+                                Lugar
+                            </a>
+                        </td>
+                    </tr>                                        
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
