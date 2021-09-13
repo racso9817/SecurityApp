@@ -1,4 +1,48 @@
 .btn, .btn-primary {
     background-color: black;
     border-color: black;
+    box-shadow: none;
 }
+
+.side-text {
+    font-size: 1vw;
+}
+
+.blockHead:after {
+    color:#2D4D1D;
+    border-left: 12.5px solid;
+    border-top: 12.5px solid transparent;
+    border-bottom: 12.5px solid transparent;
+    display: inline-block;
+    content: '';
+    position: absolute;
+    right: -12.5px;
+  
+  }
+  .blockHead {
+    background-color:#2D4D1D;
+    width: 150px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+  }
+  .blocktext{
+      color:white;
+      font-weight:bold;
+      padding-left: 20px;
+      font-family:Arial;
+      font-size:11;
+      text-align: center;
+  }
+  .text-green{
+      color: #2D4D1D;
+  }
+  .blue-col {
+      background-color: #EFF3F8;
+      justify-content: center;
+      margin: 1px;
+      text-align: center;
+  }
+  .space-row {
+      margin-left: 1px;
+  }

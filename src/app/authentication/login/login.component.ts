@@ -42,7 +42,7 @@ export class LoginComponent implements OnInit{
     const {email, contrasenia} = this.loginForm.value;
     try {
       // console.log(email);
-      const user = await this.auth.loginWithFirebasePersistence(email, contrasenia);
+      const user = await this.auth.login(email, contrasenia);
       console.log(user);
       if (user['user']['email'] !== null) {
         // console.log('ok');

@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-
 import { Dashboard1Component } from './dashboard1/dashboard1.component';
 import { Dashboard2Component } from './dashboard2/dashboard2.component';
 import { Dashboard3Component } from './dashboard3/dashboard3.component';
+import { Dashboard4Component } from './dashboard4/dashboard4.component';
 
 export const DashboardRoutes: Routes = [
   {
@@ -24,24 +24,18 @@ export const DashboardRoutes: Routes = [
         component: Dashboard2Component,
         data: {
           title: 'Cards Vehículo',
-          urls: [
-            { title: 'R.R.H.H.', url: '/rrhh' },
-            { title: 'Dispositivos Móviles', url: '/mobile' },
-            { title: 'Balística', url: '/balistica' },
-            { title: 'Vigilancia', url: '/vigilancia' },
-            { title: 'Equipos', url: '/equipos' },
-            { title: 'Vehículos', url: '/vehiculos' },
-            { title: 'Vestimenta', url: '/vestimenta' },
-            { title: 'Cámaras de Vigilancia', url: '/camaras' },
-            { title: 'Drones', url: '/drones' },
-            { title: 'Inventario', url: '/inventario' },
-            { title: 'Servicios', url: '/servicios' }
-          ]
         }
       },
       {
         path: 'dashboard3',
         component: Dashboard3Component,
+        data: {
+          title: 'General Vehículos',
+        }
+      },
+      {
+        path: 'dashboard4',
+        component: Dashboard4Component,
         data: {
           title: 'General Vehículos',
         }

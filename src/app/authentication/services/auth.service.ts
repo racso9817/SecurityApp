@@ -22,7 +22,7 @@ export class AuthService {
         const log = await this.afAuth.signInWithEmailAndPassword(email, password);
         localStorage.setItem('Usuario', log.user.email);
         const usuario = await this.getUserFirebasePromise(log.user.email);
-        localStorage.setItem('idUsuario', usuario.uid.trim());        
+        localStorage.setItem('idUsuario', usuario.uid.trim());
         // localStorage.setItem('displayName', log.user.displayName);
         this.isLogged = true;
         resolve(log);

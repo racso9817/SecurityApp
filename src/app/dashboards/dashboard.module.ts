@@ -11,13 +11,13 @@ import { Dashboard2Component } from './dashboard2/dashboard2.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DashboardRoutes } from './dashboard.routing';
 import { ChartistModule } from 'ng-chartist';
-
-
 import { RecentcommentComponent } from './dashboard-components/recent-comment/recent-comment.component';
 import { NotifierComponent } from './dashboard-components/notifier/notifier/notifier.component';
 import { CardsComponent } from './dashboard-components/cards/cards.component';
 import { Dashboard3Component } from './dashboard3/dashboard3.component';
 import { TableCarsComponent } from './dashboard-components/table-cars/table-cars.component';
+import { Dashboard4Component } from './dashboard4/dashboard4.component';
+import { AgmCoreModule } from '@agm/core';
 
 
 @NgModule({
@@ -30,6 +30,7 @@ import { TableCarsComponent } from './dashboard-components/table-cars/table-cars
     RouterModule.forChild(DashboardRoutes),
     PerfectScrollbarModule,
     NgxChartsModule,
+    AgmCoreModule
   ],
   declarations: [
     Dashboard1Component,
@@ -39,6 +40,7 @@ import { TableCarsComponent } from './dashboard-components/table-cars/table-cars
     CardsComponent,
     Dashboard3Component,
     TableCarsComponent,
+    Dashboard4Component,
   ]
 })
 export class DashboardModule { }
